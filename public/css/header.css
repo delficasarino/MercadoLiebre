@@ -1,0 +1,146 @@
+/*Header principal*/
+header {
+    background-color: #EAC926;
+    padding: 1.25rem;
+} 
+
+#main-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#main-header figure {
+    display: flex;
+    width: 45%;
+}
+
+#main-header input {
+    display: flex;
+    width: 45%;
+    border-radius: 0.3125rem;
+    border: none;
+    margin: 0.625rem;
+    color: #666;
+    font-size: 0.8rem;
+    padding: 0.625rem;
+}
+
+#main-header p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.fa-search{
+    background-color: white;
+}
+
+/*Burger menu*/
+#burger-menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem;
+    background-color: #03264C;
+    padding: 13px;
+    color: white;
+    border-radius: 0.3125rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Navbar*/
+#main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.25rem;
+}
+
+#main-menu a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 0.3125rem 0;
+    font-size: 1.0625rem;
+  }
+
+#main-menu {
+    display: none;
+}
+
+
+
+/***TABLETS***/
+@media screen and (min-width: 768px){
+
+    /*Burger menu*/
+    #burger-menu {
+        display: none;
+    }
+
+    /*Header principal*/
+    #main-header {
+        align-items: center;
+    }
+
+    #main-header figure {
+        width: 30%;
+    }
+    
+    #main-header input {
+        width: 20%;
+    }
+
+    #main-header p {
+        width: 45%;
+    }
+
+    /*Navbar*/
+    #main-menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+
+    #main-menu ul {
+        display: flex;
+    }
+
+    #main-menu ul li {
+        margin: 0 0.5rem;
+    }
+
+    #main-menu ul li a{
+        font-size: 1rem;
+    }
+}
+
+/***PC***/
+@media screen and (min-width: 1200px){
+    #main-header, #main-menu {
+        max-width: 1280px;
+        margin: auto;
+    }
+    
+    #main-menu{
+        margin-top: 2.5rem;
+    }
+    
+    #main-menu li {
+        margin: 0 0.625rem;
+    }
+    
+    #main-menu a {
+        font-size: 1.2rem;
+    }
+}

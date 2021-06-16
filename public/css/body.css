@@ -1,0 +1,45 @@
+/* DATOS A TENER EN CUENTA
+576
+768
+992
+1200
+1 rem = 16px
+*/
+
+body {
+    background: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: none;
+}
+
+#banner-home {
+    background-image: url(/img/img-home-banner.jpg);
+    background-size: cover;
+    height: 130px;
+    margin: auto;
+}
+
+/**TABLET**/
+@media screen and (min-width: 768px){
+
+    #banner-home {
+        height: 190px;
+    }
+
+}
+
+
+
+
+
+
+    

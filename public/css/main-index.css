@@ -1,0 +1,131 @@
+main.main {
+    width: 90%;
+    margin: auto;
+}
+
+/*Contenedor artículos*/
+section.contain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contain h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 1.5625rem 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+article.article img {
+    width: 100%;
+}
+
+article.article {
+    margin-bottom: 0.625rem;
+    background: white;
+    padding-bottom: 0.625rem;
+}
+
+.product-info {
+    border-top: 0.0625rem solid #ebebeb;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.fa-truck {
+    color: #39b54a;
+    padding-top: 0.3125rem;
+    width: 2rem;
+    height: 2rem;
+    border: .1rem solid #39b54a;
+    background-color: #FFF;
+    border-radius: 2rem; /*para hacerlo redondeado porq es igual q altura*/
+    padding: .35rem;
+}
+
+.truck{
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+p.precio{
+    font-size: 1.125rem;
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p.descuentos{
+    font-size: 1rem;
+    color: #39b54a;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    flex-wrap: wrap;
+
+}
+
+p.descripciones{
+    font-size: 1rem;
+    margin: 0.9375rem 0;
+    display: none;
+    color: #666;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+}
+/*FIN MAIN*/
+
+p {
+    font-size: 0.75rem;
+}
+
+
+@media screen and (min-width: 361px){
+    
+    p.descripciones{
+        display: block;
+    }
+
+    article.article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media screen and (min-width: 768px){
+    section.contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    article.article {
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    
+    /*INICIO MAIN*/
+    article.article {
+        width: 22.5%;
+    }
+    p.precio{
+        width: 50%;
+    }
+    
+    p.descuentos{
+        width: 50%;
+    }
+    /*FIN MAIN*/
+}

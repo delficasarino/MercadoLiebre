@@ -1,0 +1,31 @@
+/*INICIO FOOTER*/
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+}
+
+#footer-first-section {
+    margin-bottom: 3.125rem;
+}
+
+#footer-first-section i{
+    font-size: 2em;
+    margin-bottom: 0.625rem;
+    color: #03264C;
+}
+
+#footer-first-section article h4{
+    margin: 0;
+}
+#footer-first-section article p{
+    margin: 0.1875rem;
+}
+#footer-first-section article {
+    margin-bottom: 3.125rem;
+}
+
+#footer-second-section {
+    text-align: left;
+}
+/*FIN FOOTER*/
