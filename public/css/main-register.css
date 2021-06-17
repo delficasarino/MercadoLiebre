@@ -1,52 +1,95 @@
-.create-form {
+.main {
     padding: 1rem 1.5rem;
-    display: block;
-    width: 70%;
+    width: 80%;
     margin: auto ;
     color: #666;
 }
 
-.form-control .title {
-    margin-top: 1rem;
- }
- 
- .form-control section {
-     display: block;
-
- }
-
- .form-control section input {
-    margin-right: 1rem;
-}
- 
- .form-control input {
-    background: white;
-    margin-bottom: 1rem;
- }
- 
-.control {
-    display: block;
+.form-control {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+}
+
+.form-control input[type="text"], .form-control input[type="email"], 
+.form-control input[type="date"], .form-control input[type="password"], 
+.form-control input[type="file"], .form-control button{
+    width: 100%;
+    padding: 0.8rem;
     border: none;
-    border-radius: 0.3rem;
-    padding: 0.6rem;
-    font-size: 0.8rem;
-    color: #ebebeb;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    margin: 1rem 0;
 }
 
-label.title {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
+.title{
+    font-size: 1rem;
     font-weight: bold;
-   }
+    margin: 0.8rem 0;
+    width: 100%;
+}
 
-.radio {
+.radio-check {
+    display: block;
+}
+
+input[type="radio"]{
     margin: 1rem;
 }
 
-button.control {
-    background: #03264C ;
-    margin-bottom: 1rem;
+input[type="checkbox"]{
+    margin: 1rem;
 }
+
+label.checkbox {
+    width: 100%;
+    display: block;
+}
+
+label.fotoUsuario {
+    background-color: #666;
+    color: #ebebeb;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+
+.form-control button {
+    background: #03264C;
+    color: white;
+    text-transform: uppercase;
+}
+
+/***BOTON ENVIAR ARCHIVO***//*
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+
+
+input[type="file"]::before {
+    content: 'Seleccionar imagen';
+    display: inline-block;
+    background: #666;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ebebeb;
+  }
+
+input[type="file"]:hover::before {
+
+  }
+
+input[type="file"]:active::before {
+
+  }*/
 

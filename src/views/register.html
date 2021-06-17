@@ -18,8 +18,10 @@
     <header>
         <section id="main-header">
                 <figure><img src="/img/logo-mercado-liebre.svg" alt=""></figure>
-                <input type="text" placeholder="Buscar productos, marcas y mas..." name="search">
-                <!--<i class="fas fa-search"></i>-->
+                <form action="" method="GET" for="search">
+                    <input type="text" placeholder="Buscar productos, marcas y mas..." name="search" id="name">
+                    <!--<i class="fas fa-search"></i>-->
+                </form>
             <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </section>
         <nav id="main-menu">
@@ -42,61 +44,67 @@
         </nav>
     </header>
     <main class="main">
-        <form action="/register" method="POST" class="create-form">
-            <section class="form-control">
-                <input type="text" name="nombreApellido" placeholder="Nombre y Apellido" class="control">
-            </section>
-            <section class="form-control">
-                <input type="text" name="usuario" placeholder="Usuario" class="control">
-            </section>
-            <section class="form-control">
-                <label class="title">Fecha de Nacimiento</label>
-                <input type="date" name="fechaNacimiento" class="control">
-            </section>
-            <section class="form-control">
-                <input type="text" name="domicilio" placeholder="Domicilio" class="control">
-            </section>
-            <section class="form-control">
-                <label class="title">Perfil del usuario</label>
-                <label class="radio">
-                    <input type="radio" name="perfil">
+        <form action="/" method="POST">
+            <fieldset class="form-control">
+                <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Nombre y Apellido" required>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </fieldset>
+            <fieldset class="form-control">
+                <label class="title" for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            </fieldset>
+            <fieldset class="form-control">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+            </fieldset>
+            <fieldset class="form-control radio-check">
+                <h3 class="title">Perfil del usuario</h3>
+                <label for="perfil" required>
+                    <input type="radio" name="perfil" id="perfil" value="comprador">
                     Comprador
                 </label>
-                <label class="radio">
-                    <input type="radio" name="perfil">
+                <label for="perfil">
+                    <input type="radio" name="perfil" id="perfil" value="vendedor">
                     Vendedor
                 </label>
-            </section>
-            <section class="form-control">
-                <label class="title">Intereses</label>
-                <section>
-                    <input type="checkbox" name="electro"><label>Electro</label>
-                </section>
-                <section>
-                    <input type="checkbox" name="moda"><label>Moda</label>
-                </section>
-                <section>
-                    <input type="checkbox" name="hogar"><label>Hogar</label>
-                </section>
-                <section>
-                    <input type="checkbox" name="jugueteria"><label>Juguetería</label>
-                </section>
-                <section>
-                    <input type="checkbox" name="vidaSana"><label>Vida Sana</label>
-                </section>
-            </section>
-            <section class="form-control">
-                <label class="title">Foto de usuario</label>
-                <input type="file">
-            </section>
-            <section class="form-control">
-                <input type="password" name="password" placeholder="Contraseña" class="control">
-            </section>
-            <section class="form-control">
-                <input type="password" name="password" placeholder="Repetir contraseña" class="control">
-            </section>    
-            <button type="submit" name="submit" class="control">Enviar</button>
-            <button type="reset" name="reset" class="control">Borrar</button>
+            </fieldset>
+            <fieldset class="form-control radio-check">
+                <h3 class="title">Intereses</h3>
+                <label class="checkbox" for="intereses" required>
+                    <input type="checkbox" name="intereses" id="intereses" value="electro">
+                    Electro
+                </label>
+                <label class="checkbox" for="intereses">
+                    <input type="checkbox" name="intereses" id="intereses" value="moda">
+                    Moda
+                </label>
+                <label class="checkbox" for="intereses">
+                    <input type="checkbox" name="intereses" id="intereses" value="hogar">
+                    Hogar
+                </label>
+                <label class="checkbox" for="intereses">
+                    <input type="checkbox" name="intereses" id="intereses" value="jugueteria">
+                    Juguetería
+                </label>
+                <label class="checkbox" for="intereses">
+                    <input type="checkbox" name="intereses" id="intereses" value="vidaSana">
+                    Vida Sana
+                </label>
+            </fieldset>
+            <fieldset class="form-control">
+                <label class="title" for="fotoUsuario">Foto de usuario</label>
+                <label class="fotoUsuario">
+                    <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".jpg" required hidden>Subir imagen
+                </label>
+            </fieldset>
+            <fieldset class="form-control">
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                <input type="password" name="contraseña2" id="contraseña2" placeholder="Confirmar contraseña" required>
+            </fieldset>
+            <fieldset  class="form-control">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </fieldset>
         </form>
     </main>
     <footer>
