@@ -1,12 +1,23 @@
 /*INICIO FOOTER*/
 footer {
-    text-align: center;
+  /*   text-align: center; */
     background-color: white;
-    padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+    margin-top: 1rem;
+    width: 100vw;
 }
 
 #footer-first-section {
-    margin-bottom: 3.125rem;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80vw;
+    margin: auto;
+    
+}
+
+#footer-first-section article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 #footer-first-section i{
@@ -15,14 +26,12 @@ footer {
     color: #03264C;
 }
 
-#footer-first-section article h4{
-    margin: 0;
-}
 #footer-first-section article p{
-    margin: 0.1875rem;
+    margin: 0.1875rem 0;
+    text-align: center;
 }
 #footer-first-section article {
-    margin-bottom: 3.125rem;
+    margin: 1rem 0;
 }
 
 #footer-second-section {

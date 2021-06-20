@@ -3,6 +3,10 @@ main.main {
     margin: auto;
 }
 
+#banner {
+   width: 100vw;
+}
+
 /*Contenedor artículos*/
 section.contain {
     display: flex;
@@ -35,6 +39,7 @@ article.product {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    position: relative;
 }
 
 .fa-truck {
@@ -45,7 +50,11 @@ article.product {
     border: .1rem solid #39b54a;
     background-color: #FFF;
     border-radius: 2rem; /*para hacerlo redondeado porq es igual q altura*/
-    padding: .35rem;
+    padding: .45rem;
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    
 }
 
 .truck{
@@ -61,6 +70,7 @@ p.precio{
     width: 30%;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 p.descuentos{
@@ -70,7 +80,7 @@ p.descuentos{
     flex-direction: row;
     width: 60%;
     flex-wrap: wrap;
-
+    margin-top: 1rem;
 }
 
 p.descripciones{
