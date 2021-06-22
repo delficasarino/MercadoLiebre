@@ -25,3 +25,11 @@
 button.control {
     background: #03264C ;
 }
+
+button {
+    transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    background-color: #0022AA;
+}

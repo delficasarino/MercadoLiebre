@@ -1,10 +1,10 @@
-main.main {
-    width: 90%;
-    margin: auto;
+#banner {
+    width: 100vw;
 }
 
-#banner {
-   width: 100vw;
+main {
+    width: 90vw;
+    margin: auto;
 }
 
 /*Contenedor artículos*/
@@ -19,7 +19,7 @@ section.contain {
     color: #666;
     margin: 1.5625rem 0;
     font-weight: bold;
-    width: 100%;
+    width: 90vw;
 }
 
 article.product img {
@@ -47,14 +47,14 @@ article.product {
     padding-top: 0.3125rem;
     width: 2rem;
     height: 2rem;
+    font-size: 1rem;
     border: .1rem solid #39b54a;
     background-color: #FFF;
     border-radius: 2rem; /*para hacerlo redondeado porq es igual q altura*/
-    padding: .45rem;
+    padding: 0.34rem;
     position: absolute;
-    top: -15px;
+    top: -3vh;
     bottom: 0;
-    
 }
 
 .truck{
@@ -85,13 +85,15 @@ p.descuentos{
 
 p.descripciones{
     font-size: 1rem;
-    margin: 0.9375rem 0;
     display: none;
     color: #666;
     font-weight: 500;
     display: flex;
     width: 100%;
+    visibility: hidden;
 }
+
+
 /*FIN MAIN*/
 
 p {
@@ -106,8 +108,30 @@ p {
     }
 
     article.product {
+        box-shadow: none;
+        transition: all 400ms ease-in-out;
+    }
+
+    article.product:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    article.product p.descripciones{
+        transition: all 400ms ease-in-out;
+    }
+
+    article.product:hover p.descripciones{
+        visibility: visible;
+        margin-top: 0.5rem;
+    }
+
+    .fa-truck {
+        transition: width 2s, height 2s, transform 2s;
+    }
+        
+    article.product:hover .fa-truck {
+        transform: rotate(360deg);
+        }
 }
 
 @media screen and (min-width: 768px){
@@ -119,7 +143,7 @@ p {
     }
 
     article.product {
-        width: 45%;
+        width: 42vw;
     }
 }
 
@@ -128,7 +152,7 @@ p {
     
     /*INICIO MAIN*/
     article.product {
-        width: 22.5%;
+        width: 20vw;
     }
     p.precio{
         width: 50%;

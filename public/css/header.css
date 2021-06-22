@@ -12,9 +12,13 @@ header {
     justify-content: center;
 }
 
-#main-header figure {
+#main-header figure{
     display: flex;
     width: 45vw;
+    align-items: center;
+}
+a img {
+    width: 100vw;
 }
 
 #main-header form {

@@ -38,3 +38,16 @@ footer {
     text-align: left;
 }
 /*FIN FOOTER*/
+
+@media screen and (min-width: 1200px){
+    #footer-first-section {
+        display: flex;
+        width: 90vw;
+        flex-flow: row nowrap;
+        margin-bottom: 2rem;
+    }
+    #footer-first-section article{
+        display: flex;
+        padding: 0 1rem;
+    }
+}
