@@ -1,6 +1,4 @@
-/*INICIO FOOTER*/
 footer {
-  /*   text-align: center; */
     background-color: white;
     margin-top: 1rem;
     width: 100vw;
@@ -11,7 +9,6 @@ footer {
     flex-flow: column wrap;
     width: 80vw;
     margin: auto;
-    
 }
 
 #footer-first-section article {
@@ -30,22 +27,23 @@ footer {
     margin: 0.1875rem 0;
     text-align: center;
 }
+
 #footer-first-section article {
     margin: 1rem 0;
 }
 
 #footer-second-section {
-    text-align: left;
+    text-align: center;
 }
-/*FIN FOOTER*/
 
+/**PC**/
 @media screen and (min-width: 1200px){
     #footer-first-section {
         display: flex;
         width: 90vw;
         flex-flow: row nowrap;
-        margin-bottom: 2rem;
     }
+
     #footer-first-section article{
         display: flex;
         padding: 0 1rem;

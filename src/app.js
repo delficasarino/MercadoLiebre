@@ -3,8 +3,12 @@ const path = require("path");
 
 const app = express();
 
+app.set("port",process.env.PORT || 3000)
+
+app.listen(app.get("port"),() => console.log("Server Start http://localhost:"+app.get("port")))
+
 //Server
-app.listen(3000,()=> console.log("Servidor en http://localhost:3000"));
+/* app.listen(3000,()=> console.log("Servidor en http://localhost:3000")); */
 
 //Public Access
 const publicPath = path.resolve(__dirname, "../public");

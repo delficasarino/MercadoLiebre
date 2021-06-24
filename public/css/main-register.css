@@ -63,3 +63,10 @@ label.fotoUsuario {
     text-transform: uppercase;
 }
 
+.form-control button {
+    transition: all 400ms ease-in-out;
+}
+
+.form-control button:hover {
+    background-color: #0022AA;
+}
