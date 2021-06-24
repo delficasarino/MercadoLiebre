@@ -1,6 +1,6 @@
 .main {
     padding: 1rem 1.5rem;
-    width: 50vw;
+    width: 80vw;
     margin: auto ;
     color: #666;
 }
@@ -32,4 +32,10 @@ button {
 
 button:hover {
     background-color: #0022AA;
+}
+
+@media screen and (min-width: 768px){
+    .main {
+        width: 50vw;
+    }
 }
